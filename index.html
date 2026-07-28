@@ -183,25 +183,16 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link ="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <a
-              class="navbar-link"
-              href="https://wiki.galaxie-studio.fr/fr/Accueil"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Wiki
-            </a>
+            <button class="navbar-link" data-nav-link ="wiki">Wiki</button>
           </li>
-
-          <!--
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="blog">Blog</button>
-          </li>
-          -->
           
           <!--
           <li class="navbar-item">
@@ -788,12 +779,9 @@
         </section>
 
       </article>
-
-
-
-
-<!--
       
+
+ <!--
         - #BLOG
       
 
@@ -805,29 +793,40 @@
 
         <section class="blog-posts">
 
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all">Tous</button>
+            </li>
+
+            <li class="filter-item">
+               <button data-filter-btn="vehicles">Véhicules</button>
+            </li>
+
+          </ul>
+
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="vehicles">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog/15.07.2026.jpg" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Test</p>
+                    <p class="blog-category">Véhicules</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">19 décembre 2024</time>
+                    <time datetime="2022-02-23">15 juillet 2026</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Test h3</h3>
+                  <h3 class="h3 blog-item-title">Polo GTI 1.9 2016</h3>
 
                   <p class="blog-text">
-                    testttttttttttttttt.
                   </p>
 
                 </div>
@@ -840,11 +839,8 @@
         </section>
 
       </article>
--->
 
-
-
-
+  -->
       <!--
         - #CONTACT
       -->
