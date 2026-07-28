@@ -55,8 +55,8 @@
     );*/
   --text-gradient-color: linear-gradient(
       to right,
-      #B298BA,
-      #C7B1CD
+      #ffffff,
+      #767676
     );
 
   /* solid */
@@ -69,7 +69,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   /*--purple-color-crayola: hsl(270, 80%, 60%);*/
-  --purple-color-crayola: #B298BA;
+  --purple-color-crayola: #a4a4a4;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
