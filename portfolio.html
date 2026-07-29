@@ -153,7 +153,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="index.html" class="navbar-link active">A propos</a>
+            <a href="index.html" class="navbar-link">A propos</a>
           </li>
 
           <li class="navbar-item">
@@ -167,7 +167,7 @@
           -->
 
           <li class="navbar-item">
-            <a href="portfolio.html" class="navbar-link">Portfolio</a>
+            <a href="portfolio.html" class="navbar-link active">Portfolio</a>
           </li>
 
           <li class="navbar-item">
@@ -181,94 +181,159 @@
         </ul>
       </nav>
 
-<article class="about">
+      <article class="portfolio">
 
-  <header>
-    <h2 class="h2 article-title">À propos</h2>
-  </header>
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
 
-  <section class="about-text">
+        <section class="projects">
 
-    <br>
+          <ul class="filter-list">
 
-    <section>
-      <p><strong>Âge :</strong> 24 ans</p>
-      <p><strong>Localisation :</strong> Le Mans, France</p>
-      <p><strong>Nationalité :</strong> Française</p>
-    </section>
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all">Tous</button>
+            </li>
 
-    <br>
+            <li class="filter-item">
+               <button data-filter-btn="applications">Applications</button>
+            </li>
 
-    <section>
-      <h2>🔧 Administrateur système Linux 🐧</h2>
-      <p>
-        Administrateur système spécialisé Linux, orienté exploitation,
-        fiabilité et performance des environnements systèmes.
-      </p>
-      <p>
-        Formé en ingénierie système au CESI.
-      </p>
-      <p>
-        Plus de détails disponibles sur la page CV.
-      </p>
-    </section>
+            <li class="filter-item">
+              <button data-filter-btn="website">Site web</button>
+            </li>
 
-    <br>
+            <li class="filter-item">
+              <button data-filter-btn="games">Jeux</button>
+            </li>
 
-    <section>
-      <h2>💻 Informatique & infrastructures</h2>
-      <p>
-        Passionné par l’informatique et les technologies open source,
-        je conçois et maintiens des infrastructures robustes et efficaces.
-      </p>
-      <p>
-        J’aime transformer des besoins techniques en solutions concrètes.
-      </p>
-    </section>
+          </ul>
 
-    <br>
+          <div class="filter-select-box">
 
-    <section>
-      <h2>🏋️ Discipline & sport</h2>
-      <p>
-        Je pratique la 
-        <a href="https://fr.wikipedia.org/wiki/Force_athl%C3%A9tique" class="inline-link" target="_blank">
-          force athlétique
-        </a>,
-        à bon niveau, un sport qui renforce rigueur, constance et dépassement de soi.
-      </p>
-    </section>
+            <button class="filter-select" data-select>
 
-    <br>
+              <div class="select-value" data-selecct-value>Sélectionner une catégorie</div>
 
-    <section>
-      <h2>🌐 Communauté & projets</h2>
-      <p>
-        J’anime une communauté Discord autour de projets techniques
-        et de serveurs que je développe et administre.
-      </p>
-      <p>
-        <a href="https://discord.gg/6ffyCYq3Ea" class="inline-link" target="_blank">
-          Rejoindre le serveur Discord
-        </a>
-      </p>
-    </section>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
 
-    <br>
+            </button>
 
-    <section>
-      <h2>📬 Contact</h2>
-      <p>
-        Un projet ou une question ?
-        <a href="mailto:rudy@galaxynetwork.fr" class="inline-link">
-          Contactez-moi
-        </a>.
-      </p>
-    </section>
+            <ul class="select-list">
 
-  </section>
+              <li class="select-item">
+                <button data-select-item="all">Tous</button>
+              </li>
 
-</article>
+              <li class="select-item">
+                <button data-select-item="applications">Développement web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="website">Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="games">Serveur de jeux</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            
+      <!--
+        - #UnrealUngine 5 Inventory
+      -->
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/Rudze/UE5-InventorySystem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-ue5inventory.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Unreal Ungine 5 - UE5-InventorySystem</h3>
+
+                <p class="project-category">Jeux</p>
+
+              </a>
+
+            </li>
+
+            
+      <!--
+        - #PORTFOLIO
+      -->
+            <li class="project-item  active" data-filter-item data-category="website">
+              <a href="https://github.com/PetitPrinceQLF/WEB-Portfolio-LinuxConsole" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-linuxportfolio.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Porfolio console linux</h3>
+
+                <p class="project-category">Site Web</p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/PetitPrinceQLF/DOCKER-Stack-RudyFlix" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-rudyflix.png" alt="DOCKER-Stack-RudyFlix" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Docker Stack RudyFlix</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://mc.galaxynetwork.fr/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-minecraft.png" alt="MC-NewHorizon-Server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Serveur Minecraft - NewHorizon</h3>
+
+                <p class="project-category">Jeux</p>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
     </div>
 
